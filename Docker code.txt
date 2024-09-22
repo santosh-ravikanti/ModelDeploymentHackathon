@@ -1,0 +1,13 @@
+# Here is the code to use to use the docker
+
+#build the docker
+docker build -t fapi-lr:v1 .
+
+#run the docker
+docker run -p 80:80 fapi-lr:v1
+
+# tag the build to push into dockerhub
+docker tag fapi-lr:v1 santoshravikanti/dockerfapi-lr:v1
+
+#push to the docker hub
+docker push santoshravikanti/dockerfapi-lr:v1
